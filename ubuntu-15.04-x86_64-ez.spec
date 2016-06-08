@@ -51,7 +51,7 @@ Name: %templatename-%templatever-%templatearch-ez
 Group: Virtuozzo/Templates
 License: GPL
 Version: 7.0.0
-Release: 1%{?dist}
+Release: 2%{?dist}
 BuildRoot: %_tmppath/%name-root
 BuildArch: noarch
 Requires: %package_manager_pkg
@@ -150,5 +150,8 @@ done
 %files -f files.lst
 
 %changelog
+* Wed Jun 08 2016 Konstantin Volkov <wolf@virtuozzo.com> 7.0.0-2
+- Technical rebuild, see #PSBM-47948
+
 * Sat Sep 12 2015 Konstantin Volckov <wolf@sw.ru> 7.0.0-1
 - Initial release
